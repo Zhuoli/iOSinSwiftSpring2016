@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var userIsInTheMiddleOfTyping = false    
+    var userIsInTheMiddleOfTyping = false
     
     @IBOutlet weak var display: UILabel!
     

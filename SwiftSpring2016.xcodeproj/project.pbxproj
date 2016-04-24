@@ -12,6 +12,7 @@
 		0E2C147F1CCC63E30041A479 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E2C147D1CCC63E30041A479 /* Main.storyboard */; };
 		0E2C14811CCC63E30041A479 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E2C14801CCC63E30041A479 /* Assets.xcassets */; };
 		0E2C14841CCC63E30041A479 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E2C14821CCC63E30041A479 /* LaunchScreen.storyboard */; };
+		711E64B21CCC856F00188C59 /* CalculatorScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 711E64B11CCC856F00188C59 /* CalculatorScreen.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		0E2C14801CCC63E30041A479 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0E2C14831CCC63E30041A479 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0E2C14851CCC63E30041A479 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		711E64B11CCC856F00188C59 /* CalculatorScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CalculatorScreen.png; path = ../../../../Desktop/CalculatorScreen.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		0E2C14781CCC63E30041A479 /* SwiftSpring2016 */ = {
 			isa = PBXGroup;
 			children = (
+				711E64B01CCC855E00188C59 /* resource */,
 				0E2C147B1CCC63E30041A479 /* ViewController.swift */,
 				0E2C147D1CCC63E30041A479 /* Main.storyboard */,
 				0E2C148B1CCC64C40041A479 /* SupportFiles */,
@@ -70,6 +73,14 @@
 				0E2C14821CCC63E30041A479 /* LaunchScreen.storyboard */,
 			);
 			name = SupportFiles;
+			sourceTree = "<group>";
+		};
+		711E64B01CCC855E00188C59 /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				711E64B11CCC856F00188C59 /* CalculatorScreen.png */,
+			);
+			name = resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -133,6 +144,7 @@
 			files = (
 				0E2C14841CCC63E30041A479 /* LaunchScreen.storyboard in Resources */,
 				0E2C14811CCC63E30041A479 /* Assets.xcassets in Resources */,
+				711E64B21CCC856F00188C59 /* CalculatorScreen.png in Resources */,
 				0E2C147F1CCC63E30041A479 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,6 +311,7 @@
 				0E2C148A1CCC63E30041A479 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

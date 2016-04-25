@@ -21,17 +21,20 @@ class CalculatorBrain
         accumulator = operand
     }
     
-    var operations: Dictionary<String, Operation> = [
+    private var operations: Dictionary<String, Operation> = [
         "π":Operation.Constant(M_PI),
         "e":Operation.Constant(M_E),
         "√":Operation.UnaryOpeation(sqrt),
         "cos":Operation.UnaryOpeation(cos),
-        "✕":Operation.BinaryOperation(multiply),
+        "✕":Operation.BinaryOperation({ $0 * $1}),
+        "÷":Operation.BinaryOperation({$0 / $1}),
+        "-":Operation.BinaryOperation({$0 - $1}),
+        "+":Operation.BinaryOperation({$0 + $1}),
         "=":Operation.Equals
     ]
     
 
-    enum Operation {
+    private enum Operation {
         case Constant(Double)
         case UnaryOpeation((Double) -> Double)
         case BinaryOperation((Double, Double) -> Double)
@@ -47,20 +50,28 @@ class CalculatorBrain
                 break
             case .UnaryOpeation(let function): accumulator = function(accumulator)
                 break
-            case .BinaryOperation(let function):pending = PendingBinaryOperationInfo(binaryFunction: function, firstOperand: accumulator)
+            case .BinaryOperation(let function):
+                executePendingOperation()
+                pending = PendingBinaryOperationInfo(binaryFunction: function, firstOperand: accumulator)
                 break
             case .Equals:
-                if pending != nil
-                {
-                    accumulator = pending!.binaryFunction(pending!.firstOperand, accumulator)
-                    pending = nil
-                }
+                executePendingOperation()
                 break
             }
         }
     }
     
-    var pending: PendingBinaryOperationInfo?
+    private func executePendingOperation()
+    {
+        
+        if pending != nil
+        {
+            accumulator = pending!.binaryFunction(pending!.firstOperand, accumulator)
+            pending = nil
+        }
+    }
+    
+    private var pending: PendingBinaryOperationInfo?
     
     struct  PendingBinaryOperationInfo {
         var binaryFunction: (Double, Double) -> Double

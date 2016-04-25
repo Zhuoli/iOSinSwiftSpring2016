@@ -13,6 +13,7 @@
 		0E2C14811CCC63E30041A479 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E2C14801CCC63E30041A479 /* Assets.xcassets */; };
 		0E2C14841CCC63E30041A479 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E2C14821CCC63E30041A479 /* LaunchScreen.storyboard */; };
 		711E64B21CCC856F00188C59 /* CalculatorScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 711E64B11CCC856F00188C59 /* CalculatorScreen.png */; };
+		714D39291CCD8CEB00FD7E5C /* CalculatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714D39281CCD8CEB00FD7E5C /* CalculatorBrain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		0E2C14831CCC63E30041A479 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0E2C14851CCC63E30041A479 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		711E64B11CCC856F00188C59 /* CalculatorScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CalculatorScreen.png; path = ../../../../Desktop/CalculatorScreen.png; sourceTree = "<group>"; };
+		714D39281CCD8CEB00FD7E5C /* CalculatorBrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorBrain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		0E2C14781CCC63E30041A479 /* SwiftSpring2016 */ = {
 			isa = PBXGroup;
 			children = (
+				714D39281CCD8CEB00FD7E5C /* CalculatorBrain.swift */,
 				711E64B01CCC855E00188C59 /* resource */,
 				0E2C147B1CCC63E30041A479 /* ViewController.swift */,
 				0E2C147D1CCC63E30041A479 /* Main.storyboard */,
@@ -156,6 +159,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				714D39291CCD8CEB00FD7E5C /* CalculatorBrain.swift in Sources */,
 				0E2C147C1CCC63E30041A479 /* ViewController.swift in Sources */,
 				0E2C147A1CCC63E30041A479 /* AppDelegate.swift in Sources */,
 			);
